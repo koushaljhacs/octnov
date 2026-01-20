@@ -1,7 +1,7 @@
 import java.util.*;
 public class test {
-    public static void mergeSortedArray(int[] arr, int[] brr, int[] crr) {
-        
+    public static void mergeSortedArray(int[] arr, int[] brr, int[]) {
+        int[] crr = new int[arr.length + brr.length];
         int i=0, j=0, k=0;
         while(i < arr.length && j < brr.length) {
             if(arr[i] < brr[j]) {
@@ -23,14 +23,10 @@ public class test {
         }
         int length = arr.length;
         int[] a = new int[length/2];
-        for(int i=0; i<a.length; i++) a[i] = arr[i];
-        
         int[] b = new int[length - length/2];
-        for(int j=a.length; j < length; j++) b[j-a.length] = arr[j];
-
         mergeSortAlgorithm(a);
         mergeSortAlgorithm(b);
-        mergeSortedArray(a,b, arr);
+        mergeSortedArray(a,b);
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
