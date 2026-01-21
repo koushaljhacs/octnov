@@ -1,0 +1,70 @@
+Date: 21st Jan, 2026
+Question ID: 3315
+Link: https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/description/?envType=daily-question&envId=2026-01-21
+
+==========================================================
+      ALGORITHM: MINIMUM BITWISE ARRAY SOLUTION
+==========================================================
+
+Author: Koushal Jha
+
+1. THE GOAL (The Riddle)
+------------------------
+We want to find the smallest number 'ans' so that when we 
+perform a "magic trick" (ans | (ans + 1)), it equals our 
+target number 'x'.
+
+2. THE INTUITION (The Light Switch Rule)
+----------------------------------------
+- Think of a binary number as a row of light switches (1 is ON, 0 is OFF).
+- The trick (ans + 1) finds the first OFF switch (from right to left) 
+  and flips it to ON, while turning all 1s to its right into 0s.
+- To find the SMALLEST starting number, we look at our goal 'x' and 
+  find the first switch that is OFF (0).
+- We then take the switch immediately to the right of that OFF 
+  switch and turn it back to OFF.
+
+3. THE ALGORITHM STEP-BY-STEP
+-----------------------------
+1. Create a "Scanner" (bitmask) starting at 1.
+2. Look at the Target Number (x) from right to left.
+3. If the current switch is ON (1):
+   - Record a potential answer by turning that bit OFF (x - scanner).
+   - Move the Scanner to the next switch on the left (Scanner << 1).
+4. If the current switch is OFF (0):
+   - Stop scanning. The last potential answer we recorded is our smallest result.
+5. If we never found a '1' to turn off (like in the number 2), return -1.
+
+==========================================================
+            JAVA IMPLEMENTATION (CLEAN CODE)
+==========================================================
+
+class Solution {
+    public int[] minBitwiseArray(List<Integer> nums) {
+        int listSize = nums.size();
+        int[] finalAnswers = new int[listSize];
+
+        for (int i = 0; i < listSize; i++) {
+            int targetNumber = nums.get(i);
+            int smallestAnsFound = -1;
+            
+            // This 'bitScanner' checks switches 1, 2, 4, 8...
+            int bitScanner = 1;
+
+            // Loop as long as we see '1' bits in the target
+            while ((targetNumber & bitScanner) != 0) {
+                
+                // Turn the current bit OFF to try a smaller answer
+                smallestAnsFound = targetNumber - bitScanner;
+                
+                // Move scanner one position to the left
+                bitScanner = bitScanner << 1; 
+            }
+
+            finalAnswers[i] = smallestAnsFound;
+        }
+
+        return finalAnswers;
+    }
+}
+
