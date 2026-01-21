@@ -1,0 +1,53 @@
+Hi I am Kaushal Jha I completed my higher secondary education in Kolkata and in 2023 I joined GLA University Mathura to pursue a basic computer science engineering in I am a third year during my yesterday I built a strong foundation in Java and C and expanded into scripting languages like Python and Javascript I have a hands on experience with not just and expresses and basic knowledge of Reactjs My database skills include Oracle DB and Postgresql I passionate about AI and my short term goal is to improve prompt engineering so AI better understand my needs Looking ahead I am to become a Java full stack developer with AI expertise I am also interested in architecture design including firewall design and I enjoy leading project managing teams and effective time management I am always committed to delivering on my promises so currently I am researching and building a company in his health mode exploring innovative solution in AI and software architecture so yeah this video is a part of my university CCTV Batch 2027 initiative preparing for upcoming job interviews and intensive thank you for watching this video For watching this video
+
+
+Hi, i'm koushal jha. 
+I completed my higher secondary education in kolkata, after that and in 2023. i joined GLA University, Mathura, to pursue a B.Tech in computer science engineering.
+During my studies, as a third year B.Tech student, i built a strong foundation in Java programming language and expanded into scripting lanaguages python and Javascript. I have also hands-on experience with Node.js and  springboot microservices, and basic knowledge of React.JS. My skills related to QUERY lanaguage included this software Oracle DB and Postgresql.
+I'm passionate about AI, and my short term goal is to improve my prompt so that AI can better understand my needs. Looking ahead, i aim to become a java full stack developer with AI expertise. I'm also interested in architecture design, including firewall design, and i enjoy leading projects, managing teams, and effective time management.
+so currently, i'm researching and building a company in stealth mode, exploring innovative solutions in AI and software architecture.
+So, This video is part of my university CCTP Program, preparing for ourselves in upcoming job to face interviews.
+Thankyou for watching
+
+
+PROFESSIONAL INTRODUCTION SCRIPT - KOUSHAL JHA
+
+[SECTION 1: INTRODUCTION]
+Hello, my name is Koushal Jha. I am currently a third-year Computer Science 
+Engineering student at GLA University, Mathura. My academic journey began 
+in Kolkata, and since 2023, I have been dedicated to mastering the core 
+principles of software engineering and system design.
+
+[SECTION 2: TECHNICAL EXPERTISE]
+My technical foundation is built on Java, which I have utilized to develop 
+complex logic and backend systems. I have also expanded my versatility into 
+scripting with Python and JavaScript. My specialized stack includes Node.js 
+and Spring Boot Microservices, complemented by a working knowledge of 
+React.js. For data management, I am proficient in PostgreSQL and Oracle DB.
+
+[SECTION 3: FEATURED PROJECT]
+Applying these skills, I developed an AI-Integrated Hostel Management System. 
+This project allowed me to demonstrate a full-stack and DevOps mindset. 
+I built the application using Node.js and PostgreSQL, but more importantly, 
+I managed the deployment lifecycle myself. I implemented a CI/CD pipeline 
+and configured a local server environment using Nginx and ngrok to handle 
+traffic and tunneling. This experience gave me hands-on insight into how 
+software operates in a live, networked environment.
+
+[SECTION 4: LEADERSHIP & STEALTH VENTURE]
+Beyond development, I am deeply interested in Software Architecture and 
+Cybersecurity, specifically firewall design. I am also an advocate for 
+AI Prompt Engineering, as I believe the future of development lies in the 
+synergy between human intent and AI execution. 
+
+Currently, I am operating in stealth mode, researching and building a company 
+dedicated to exploring innovative AI solutions. This venture is where I apply 
+my passion for project management, team leadership, and strategic time management.
+
+[SECTION 5: CONCLUSION]
+This video is part of my university’s CCTP Program, which focuses on 
+professional readiness and interview preparation for the upcoming 
+recruitment season. My goal is to transition into a Java Full-Stack 
+Developer role where I can contribute my AI expertise and leadership skills. 
+
+Thank you for your time and for watching.
