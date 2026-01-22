@@ -1,0 +1,107 @@
+Date: 22nd Jan, 2026
+Question ID: 3507
+Link: https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/description/?envType=daily-question&envId=2026-01-22
+
+==========================================================
+      ALGORITHM: MINIMUM PAIR REMOVAL (SMALLEST MERGE)
+==========================================================
+Author: Koushal Jha
+
+1. THE GOAL (The Game)
+----------------------
+Imagine you have a row of number blocks. You want to pick 
+two neighbors, remove them, and replace them with a single 
+block that is the sum of both. You keep doing this as long 
+as the row isn't in a perfect "ascending" order (small to big).
+
+2. THE INTUITION (The Greedy Strategy)
+--------------------------------------
+- We want to do this as many times as possible, but we stop 
+  if the numbers are already perfectly sorted (1, 2, 3...).
+- To stay in the game longer, we always look for the two 
+  neighbors that have the SMALLEST sum.
+- By merging the smallest neighbors first, we keep the overall 
+  numbers small, which helps us find more pairs to remove.
+
+3. THE ALGORITHM STEP-BY-STEP (Kid-Style)
+-----------------------------------------
+1. Create a "Map" (next array) so every number knows who its 
+   neighbor is.
+2. Look at the whole row. Check two things:
+   - Is everyone already standing in order (Smallest to Largest)?
+   - Which two neighbors, when added together, make the smallest sum?
+3. If they are NOT in order:
+   - Take those two neighbors with the smallest sum.
+   - Combine them into one new number.
+   - Update the "Map" so the neighbors are linked correctly again.
+   - Increase our "Removal Count."
+4. If they ARE in order, the game is over! Return the count.
+
+==========================================================
+            JAVA IMPLEMENTATION (CLEAN CODE)
+==========================================================
+
+import java.util.Arrays;
+
+class Solution {
+
+    public int minimumPairRemoval(int[] numbers) {
+        int totalElements = numbers.length;
+        
+        // This array acts like a chain, pointing to the next available neighbor
+        int[] nextNeighborMap = new int[totalElements];
+        Arrays.setAll(nextNeighborMap, i -> i + 1);
+        nextNeighborMap[totalElements - 1] = -1; // -1 means "No more neighbors"
+
+        int removalCount = 0;
+
+        // Keep playing as long as we have at least 2 numbers left
+        while (totalElements - removalCount > 1) {
+            int currentPointer = 0;
+            int bestTargetToMerge = 0;
+            
+            // Start by assuming the first pair is the best one to merge
+            int smallestSumFound = numbers[0] + numbers[nextNeighborMap[0]];
+            boolean isPerfectlySorted = true;
+
+            // Scan the entire row to find the smallest pair and check sorting
+            while (currentPointer != -1 && nextNeighborMap[currentPointer] != -1) {
+                int neighbor = nextNeighborMap[currentPointer];
+
+                // Check if the current number is bigger than its neighbor (not sorted)
+                if (numbers[currentPointer] > numbers[neighbor]) {
+                    isPerfectlySorted = false;
+                }
+
+                // Calculate the sum of these two neighbors
+                int combinedSum = numbers[currentPointer] + numbers[neighbor];
+                
+                // If this sum is smaller than what we found before, remember it!
+                if (combinedSum < smallestSumFound) {
+                    bestTargetToMerge = currentPointer;
+                    smallestSumFound = combinedSum;
+                }
+                
+                // Move to the next person in the chain
+                currentPointer = nextNeighborMap[currentPointer];
+            }
+
+            // If the whole row is already Small -> Big, we stop here
+            if (isPerfectlySorted) {
+                break;
+            }
+
+            // "Merge" the pair:
+            removalCount++;
+            
+            // Skip over the neighbor because it's now merged into 'bestTargetToMerge'
+            nextNeighborMap[bestTargetToMerge] = nextNeighborMap[nextNeighborMap[bestTargetToMerge]];
+            
+            // Update the value to the new combined sum
+            numbers[bestTargetToMerge] = smallestSumFound;
+        }
+
+        return removalCount;
+    }
+}
+==========================================================
