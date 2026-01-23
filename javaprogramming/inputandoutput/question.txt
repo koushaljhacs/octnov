@@ -215,3 +215,43 @@ MANDATORY STANDARDS:
 - Variables:   length, width, height
 - Scanner:     Scanner input = new Scanner(System.in);
 ------------------------------------------------------------
+
+QUESTION ID: 006
+TITLE: Binita's Chess Score
+
+DESCRIPTION:
+Binita plays a game on a rectangular grid of N rows and M 
+columns. Initially, all cells are uncolored and the score is 
+zero. In each turn, she colors an uncolored cell. The score 
+for that turn is the number of neighboring colored cells 
+(sharing a side). The game ends when all cells are colored. 
+Calculate the maximum possible total score.
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Formula           | Max Score = N * (M - 1) + M * (N - 1)|
+| Constraints       | 1 <= N, M <= 50                      |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 15 13             | 362                                  |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | Input (N, M)       | Expected Output           |
++---------+--------------------+---------------------------+
+| 01      | 15 13              | 362                       |
++---------+--------------------+---------------------------+
+| 02      | 21 16              | 635                       |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     ProgrammingInJava.InputAndOutput;
+- Class Name:  Q006
+- Variables:   n, m, ans
+- Scanner:     Scanner input = new Scanner(System.in);
+------------------------------------------------------------
