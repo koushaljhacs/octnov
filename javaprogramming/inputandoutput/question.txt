@@ -1,0 +1,95 @@
+============================================================
+                     ASSIGNMENT HEADER
+============================================================
+| Author     : Koushal Jha                                 |
+| Subject    : Java Programming                            |
+| Chapter    : Input and Output                            |
+| Difficulty : Level 1                                     |
+| Duration   : 48 Hours                                    |
+============================================================
+
+------------------------------------------------------------
+QUESTION ID: 001
+TITLE: Rebecca's New Volleyball
+
+DESCRIPTION:
+Rebecca bought a new volleyball in the sports shop. It looks 
+like a medium size. She somehow found the radius of the sphere, 
+but she would like to know the volume of that ball. Help her 
+write a program to compute the volume of the ball using the 
+formula for a sphere.
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Formula           | Volume = (4/3) * 3.14 * r^3          |
+| Constraints       | 1.00 <= r <= 5.00                    |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 2.56              | 70.240606                            |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | Input (Radius)     | Expected Output           |
++---------+--------------------+---------------------------+
+| 01      | 2.56               | 70.240606                 |
+| 02      | 3.1                | 124.724975                |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     javaprogramming.inputandoutput;
+- Class Name:  Q001
+- Variable:    radiusOfBall
+------------------------------------------------------------
+
+------------------------------------------------------------
+QUESTION ID: 002
+TITLE: Basic Arithmetic Operations
+
+DESCRIPTION:
+Rathik organized a technical interview round at Microsoft. 
+The goal is to perform basic arithmetic operations on two 
+given numbers. Write a program to perform Addition, 
+Subtraction, Multiplication, Division, and Modulus on two 
+integers. Note: Division must be printed with 3 decimal values.
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Operations        | +, -, *, /, %                        |
+| Constraints       | 1 <= num1 <= 50, 1 <= num2 <= 50     |
+| Note              | Result of / must be formatted to .3f |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 17 13             | Addition : 30                        |
+|                   | Subtraction : 4                      |
+|                   | Multiplication : 221                 |
+|                   | Division : 1.308                     |
+|                   | Modulus : 4                          |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | Input (a, b)       | Expected Output           |
++---------+--------------------+---------------------------+
+| 01      | 17 13              | (See Sample Output above) |
+| 02      | 31 4               | Addition : 35             |
+|         |                    | Subtraction : 27          |
+|         |                    | Multiplication : 124      |
+|         |                    | Division : 7.750          |
+|         |                    | Modulus : 3               |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     ProgrammingInJava.InputAndOutput;
+- Class Name:  Q002
+- Variables:   testnum1, testnum2
+- Scanner:     Scanner input = new Scanner(System.in);
+------------------------------------------------------------
