@@ -93,3 +93,45 @@ MANDATORY STANDARDS:
 - Variables:   testnum1, testnum2
 - Scanner:     Scanner input = new Scanner(System.in);
 ------------------------------------------------------------
+
+------------------------------------------------------------
+QUESTION ID: 003
+TITLE: IPL Contest: Number Conversion
+
+DESCRIPTION:
+As part of an IPL contest, convert a given integer to its 
+octal and hexadecimal equivalents. Correct answers can win 
+a VIP box ticket for the final match! Help Abilash, a die-hard 
+CSK fan, solve this conversion task.
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Target            | Integer to Octal & Hexadecimal       |
+| Constraints       | 1 <= iplno <= 10000                  |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 1953              | 3641                                 |
+|                   | 7a1                                  |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | Input (iplno)      | Expected Output           |
++---------+--------------------+---------------------------+
+| 01      | 1953               | 3641                      |
+|         |                    | 7a1                       |
++---------+--------------------+---------------------------+
+| 02      | 8751               | 21057                     |
+|         |                    | 222f                      |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     ProgrammingInJava.InputAndOutput;
+- Class Name:  Q003
+- Variable:    iplno
+- Scanner:     Scanner input = new Scanner(System.in);
+------------------------------------------------------------
