@@ -48,17 +48,6 @@ MANDATORY STANDARDS:
 - Class Name:  Q011
 - Keywords:    int y,x; 
 - Operator:    ==, %, =
-------------------------------------------------------------
-
-============================================================
-                     ASSIGNMENT HEADER
-============================================================
-| Author     : Koushal Jha                                 |
-| Subject    : Java Programming                            |
-| Chapter    : Datatypes and Operators                     |
-| Difficulty : Level 1                                     |
-| Duration   : 48 Hours                                    |
-============================================================
 
 ------------------------------------------------------------
 QUESTION ID: Q012
@@ -101,4 +90,95 @@ MANDATORY STANDARDS:
 - Variables:   double a,b,c;
 - Input:       c=sc.nextDouble();
 - Math:        Math.ceil
+------------------------------------------------------------
+
+QUESTION ID: Q013
+TITLE: T20 Cricket Win Possibility
+
+DESCRIPTION:
+Kenneth is in Team B. Team A finished their 20 overs with a 
+score of R. Team B has scored C runs in O overs. Each over 
+has 6 balls, and the maximum runs per ball is 6. Determine 
+if it is mathematically possible for Team B to score 
+strictly more than R runs in the remaining (20 - O) overs.
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Max Possible Score| C + (20 - O) * 6 * 6                 |
+| Win Condition     | Max Possible Score > R               |
+| Constraints       | 0 <= R <= 720; 1 <= O <= 19          |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 719 18 648        | YES                                  |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | Input (R O C)      | Expected Output           |
++---------+--------------------+---------------------------+
+| 01      | 719 18 648         | YES                       |
+| 02      | 400 10 40          | NO                        |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     ProgrammingInJava.DatatypesAndOperators;
+- Class Name:  Q013
+- Variables:   int r,o,c;
+- Logic:       Ternary operator (?)
+------------------------------------------------------------
+
+QUESTION ID: Q013
+TITLE: T20 Cricket Win Possibility
+
+DESCRIPTION:
+Kenneth is playing in a T20 cricket match. In a match, Team A 
+plays for 20 overs. In a single over, the team gets to play 
+6 times, and in each of these 6 tries, they can score a 
+maximum of 6 runs. After Team A's 20 overs are finished, 
+Team B similarly plays for 20 overs and tries to get a 
+higher total score than the first team. The team with the 
+higher total score at the end wins the match.
+
+Kenneth is in Team B. Team A has already played their 20 
+overs, and have gotten a score of R. Kenneth's Team B has 
+started playing, and have already scored C runs in the first 
+O overs. In the remaining 20-O overs, find whether it is 
+possible for Kenneth's Team B to get a score high enough to 
+win the game. That is, can their final score be strictly 
+larger than R?
+
+TECHNICAL SPECIFICATIONS:
++-------------------+--------------------------------------+
+| Component         | Details                              |
++-------------------+--------------------------------------+
+| Constraints       | 0 <= R <= 720                        |
+|                   | 1 <= O <= 19                         |
+|                   | 0 <= C <= 36 * O                     |
+| Input Format      | Single line: R, O, C (integers)      |
+| Output Format     | "YES" or "NO"                        |
++-------------------+--------------------------------------+
+
+SAMPLE INPUT AND OUTPUT:
++-------------------+--------------------------------------+
+| Sample Input      | Sample Output                        |
++-------------------+--------------------------------------+
+| 719 18 648        | YES                                  |
++-------------------+--------------------------------------+
+
+LOGICAL TEST CASES:
++---------+--------------------+---------------------------+
+| Case ID | INPUT (STDIN)      | EXPECTED OUTPUT           |
++---------+--------------------+---------------------------+
+| 01      | 719 18 648         | YES                       |
+| 02      | 4000 10 40         | NO                        |
++---------+--------------------+---------------------------+
+
+MANDATORY STANDARDS:
+- Package:     ProgrammingInJava.DatatypesAndOperators;
+- Class Name:  Q013
+- Keywords:    ?, int r,o,c;
 ------------------------------------------------------------
