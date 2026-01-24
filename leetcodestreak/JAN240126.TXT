@@ -1,0 +1,32 @@
+Date: 24th Jan, 2026
+Question ID: 1877
+Link: https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/?envType=daily-question&envId=2026-01-24
+
+class Solution {
+    public int minPairSum(int[] nums) {
+        // Step 1: Sort the array
+        Arrays.sort(nums);
+        
+        int n = nums.length;
+        int left = 0;
+        int right = n - 1;
+        int maxPairSum = 0;
+        
+        // Step 2: Form optimal pairs
+        while (left < right) {
+            // Pair smallest with largest
+            int currentSum = nums[left] + nums[right];
+            
+            // Update maximum pair sum
+            if (currentSum > maxPairSum) {
+                maxPairSum = currentSum;
+            }
+            
+            // Move pointers inward
+            left++;
+            right--;
+        }
+        
+        return maxPairSum;
+    }
+}
