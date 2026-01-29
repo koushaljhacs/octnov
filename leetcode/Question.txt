@@ -1,4 +1,7 @@
 +----+------------------------------------+------------+------------------------------------+---------------------------------------------------------------------------+
 | #  | File Name                          | LeetCode # | Description                        |   Link                                                                    |
 +----+------------------------------------+------------+------------------------------------+----------------------------------------------------------------------- ---|
-| 1  | BasicBinarySearch.java             | 704        | Classic Binary Search              | https://leetcode.com/problems/binary-search/description/                  |
+| 1  | BasicBinarySearch.java             | 704        | Classic Binary Search              |
+| 2  | SearchInsertPosition.java          | 35         | Insert Position                    |
+| 3  | LowerBoundImplementation.java      | -          | Lower Bound Algorithm              |
+| 4  | FirstBadVersion.java               | 278        | First Bad Version                  |
